@@ -150,6 +150,7 @@ var shop = function() {
     );
     // Use Switch to carry out acction
     switch (shopOptionPrompt) {
+        case "REFILL":
         case "refill":
             if (playerMoney >=7) {
             window.alert("Refilling player's health by 20 for 7 dollars.");
@@ -163,6 +164,7 @@ var shop = function() {
             }
 
             break;
+        case "UPGRADE":
         case "upgrade":
             if (playerMoney >=7) {
             window.alert("Upgrading player's attack by 6 for 7 dollars.");
@@ -174,8 +176,9 @@ var shop = function() {
             else {
                 window.alert("you don't have enough money!");
             }
-            
+
             break;
+        case "LEAVE":
         case "leave":
             window.alert("Leaving the Shop");
 
@@ -226,4 +229,5 @@ var endGame = function(){
 //   * Fight all enemy-robots
 //   * Defeat each enemy-robot
 // "Lose" - Player robot's health is zero or Less.
-//
+//              
+
